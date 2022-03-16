@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+#intro {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+}
+#intro h1 {
+    position: relative;
+    background-image: linear-gradient(to right, #fdad00, #0026ff);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 10vh;
+    top: 25vh;
+}
