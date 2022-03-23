@@ -34,6 +34,7 @@ body {
     -moz-text-fill-color: transparent;
     font-size: 10vh;
     top: 25vh;
+    transition-duration: .3s;
 }
 #description {
     position: absolute;
@@ -61,10 +62,9 @@ body {
 }
 .start {
     position: absolute;
-    vertical-align: middle;
     text-align: center;
-    vertical-align: middle;
     background: none;
+    border-radius: 30vw;
     font-size: 3vh;
     color: #A15280;
     border-style: solid;
@@ -73,11 +73,72 @@ body {
     height: 10vh;
     left: 40vw;
     bottom: 7vh;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     transition-duration: .5s;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    
 }
 .start:hover {
     cursor:grab;
     background-color: #7a6b7454;
+    animation-name: colorChange;
+}
+#login {
+    text-align: center;
+    font-size: 3vh;
+    opacity: 0%;
+}
+#loginInput {
+    background-color: #3f3f3f;
+    border-style: solid;
+    border-color: #4e4e4e;
+    color: #ffffff;
+}
+@keyframes colorChange {
+    0% {
+        border-color: #A15280;
+        color: #A15280
+    }
+    25% {
+        border-color: #a0772a;
+        color: #a0772a
+    }
+    50% {
+        border-color: #482a9b;
+        color: #482a9b
+    }
+    75% {
+        border-color: #FFB6C1;
+        color: #FFB6C1;
+    }
+    100% {
+        border-color: #A15280;
+        color: #A15280;
+    }
+}
+@keyframes titleOut {
+    50% {
+        font-size: 8vh;
+        transform: translateY(0vh);
+    }
+    100% {
+        font-size: 8vh;
+        transform: translateY(-45vh);
+    }
+}
+@keyframes startOut {
+    100% {
+        transform: translateY(20vh);
+        border-color: #A15280;
+        color: #A15280;
+    }
+}
+@keyframes loginIn {
+    50% {
+        opacity: 0%;   
+    }
+    100% {
+        opacity: 100%;
+
+    }
 }
