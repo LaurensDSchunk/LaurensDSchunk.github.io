@@ -1,14 +1,21 @@
+let changePage = false;
+
+
 function transition1() {
     document.getElementById('introText').style.animation = 'titleOut .5s linear 0s 1 normal forwards'; 
     document.getElementById('startButton').style.animation = 'startOut .5s linear 0s 1 normal forwards';
     document.getElementById('login').style.animation = 'loginIn 1s linear 0s 1 normal forwards';
+    document.getElementById('loginInput').focus();
 }
 
 document.addEventListener('keypress',function(key) {
     if (key.keyCode == 13 && SHA256(document.getElementById("loginInput").value) == "280d44ab1e9f79b5cce2dd4f58f5fe91f0fbacdac9f7447dffc318ceb79f2d02"){
-        alert("welcome");
+        document.getElementById("loginInput").value = "";
+        document.getElementById('login').style.animation = 'loginOut .5s linear 0s 1 normal forwards'
+        document.getElementById('choose').style.animation = 'chooseIn 1s linear 0s 1 normal forwards'
     }
 })
+
 
 
 
