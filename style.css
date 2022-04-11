@@ -73,7 +73,7 @@ body {
     height: 10vh;
     left: 40vw;
     bottom: 7vh;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     transition-duration: .5s;
     
@@ -93,6 +93,41 @@ body {
     border-style: solid;
     border-color: #4e4e4e;
     color: #ffffff;
+    text-align: center;
+    width: 55px;
+}
+#choose {
+    opacity: 0;
+    text-align: center;
+}
+#chooseText {
+    font-size: 6vh;
+    
+}
+#options {
+    width: 40vw;
+    left: 30vw;
+    position: absolute;
+    top: 40vh;
+}
+#options button {
+    text-align: center;
+    background: none;
+    font-size: 3vh;
+    color: #A15280;
+    border-style: solid;
+    border-color: #A15280;
+    width: 10vw;
+    height: 5vh;
+
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition-duration: .5s;
+}
+#options button:hover {
+    cursor:grab;
+    background-color: #7a6b7454;
+    animation-name: colorChange;
 }
 @keyframes colorChange {
     0% {
@@ -120,10 +155,12 @@ body {
     50% {
         font-size: 8vh;
         transform: translateY(0vh);
+        opacity: 100%;
     }
     100% {
         font-size: 8vh;
         transform: translateY(-45vh);
+        opacity: 0%;
     }
 }
 @keyframes startOut {
@@ -140,5 +177,27 @@ body {
     100% {
         opacity: 100%;
 
+    }
+}
+@keyframes loginOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes chooseIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
