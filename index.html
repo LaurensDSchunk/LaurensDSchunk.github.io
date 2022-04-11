@@ -15,14 +15,18 @@
         <div id = "intro">
             <h1 id = "introText">Hi, I'm Laurens Schunk</h1>
             <button id = "startButton" class = "start" onclick = "transition1();">Start</button>
-            
         </div>
         <div id = "login">
             <h1 id = "loginText" class = "grad">Enter The Password:</h1>
-            <input type = "password" id = "loginInput">
-            
+            <input type = "password" id = "loginInput" maxlength="7">        
         </div>
-
+        <div id = "choose">
+            <h1 id = "chooseText" class = "grad">Choose Where To Start:</h1>
+            <div id = "options">
+                <button>About Me</button>
+                <a href = "projects/typing/index.html"><button>Projects</button></a>
+            </div>
+        </div>
         <script src = "script.js"></script>
     </body>
-</html>
+</html> 
