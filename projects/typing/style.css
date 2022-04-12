@@ -39,6 +39,14 @@ body {
     height: 100%;
     transition-duration: .25s;
 }
+#timeLeft {
+    position: absolute;
+    top: 0;
+    background-color: #bbbbbb;
+    height: 1vh;
+    width: 100vw;
+    transition-duration: .2s;
+}
 #letterDisplay {
     position: absolute;
     width: 100%;
@@ -90,3 +98,4 @@ body {
 #gameOver h3 {
     font-size: 4vh;
 }
+
