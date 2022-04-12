@@ -14,6 +14,7 @@ const letterDisplay = {
 };
 let letters = ["","","","",""];
 let scene = "home";
+let timeLeft = 0;
 let score = 0;
 let lives = 5;
 let ticks = 0;
@@ -43,6 +44,24 @@ function tick () {
             }
             sceneDisplay();
         }
+    }
+    if (scene == "game") {
+        time-=4;
+        if (time == 0) {
+            if (lives == 1) {
+                scene = "gameOver";
+                document.getElementById("endScore").innerText = score;
+                generated = false;
+                sceneDisplay();
+                generateMessage();
+            }else{
+                time = 100;
+                lives --;
+                document.getElementById("livesLeft").innerText = lives;
+            }
+        }
+        document.getElementById("timeLeft").style.width = time + "vw";
+        document.getElementById("timeLeft").style.left = (100 - time) / 2 + "vw";
     }
 }
 function sceneDisplay() {
@@ -78,8 +97,10 @@ function renderLetters() {
     letterDisplay.posN2.innerText = letters[4].toUpperCase();
 }
 function nextLetter() {
+    time = 100;
     letters.shift(1,1);
     letters.push(generateLetter())
+    pos0.style.color = "#ffffff"
     renderLetters();
 }
 function checkAnswer(key) {
@@ -95,6 +116,8 @@ function checkAnswer(key) {
             sceneDisplay();
             generateMessage();
         }else{
+            pos0.style.color = "#e38682"
+            time = 100;
             lives --;
             document.getElementById("livesLeft").innerText = lives;
         }
@@ -102,6 +125,7 @@ function checkAnswer(key) {
 }
 function preloadGame () {
     lives = 5;
+    time = 100;
     score = 0;
     letters = ["","","","",""];
     letters[2] = generateLetter();
@@ -109,6 +133,7 @@ function preloadGame () {
     letters[4] = generateLetter();
     document.getElementById("currentScore").innerText = score;
     document.getElementById("livesLeft").innerText = lives;
+    pos0.style.color = "#ffffff"
     renderLetters();
 }
 function generateMessage() {
@@ -120,6 +145,8 @@ function generateMessage() {
     ]
     document.getElementById("motivation").innerText = options[Math.floor(Math.random() * options.length)]
 }
+
+
 document.addEventListener("keydown", function (key) {
     if (pressing == false) {
         if (scene == "home" || scene == "gameOver") {
@@ -137,6 +164,6 @@ document.addEventListener("keyup", function () {
     pressing = false;
 })
 
-
 sceneDisplay();
+
 
