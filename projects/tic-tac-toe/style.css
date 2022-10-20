@@ -15,6 +15,7 @@ html, body {
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
+	background-color: white;
 }
 
 #gameBoard {
