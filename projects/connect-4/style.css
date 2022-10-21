@@ -10,6 +10,7 @@ html, body {
 	align-content: center;
 	flex-wrap: wrap;
 	text-align: center;
+	background-color: white;
 }
 table {
 	border-radius: 3vmin;
