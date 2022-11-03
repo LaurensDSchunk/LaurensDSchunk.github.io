@@ -1,0 +1,72 @@
+{
+	"projects":[
+		{
+			"name":"Personal Website",
+			"description":"This website. I created it to showcase my projects and art to friends and family.",
+			"path":"/"
+		},
+		{
+			"name":"Weird Dodge Game",
+			"description":"I made this in one day becuase I was bored. It does not work on mobile, but it is super fun!",
+			"path":"projects/Weird-Dodge-Game"
+		},
+		{
+			"name":"Connect-4",
+			"description":"A connect-4 ai. You can still win against it but it's a fun challenge. Have fun!",
+			"path":"projects/connect-4"
+		},
+		{
+			"name":"Tic Tac Toe",
+			"description":"A tic tac toe game with an ai. This took me a while to figure out, but now you can't win!",
+			"path":"projects/tic-tac-toe"
+		},
+		{
+			"name":"Typing Game",
+			"description":"I created this game to improve my typing skills. How high of a score can you get?",
+			"path":"projects/typing"
+		},
+		{
+			"name":"Move, But Not Too Much",
+			"description":"My first game. Written in Python over my winter Vacation. See how much you can move.",
+			"path":"https://replit.com/@Samgenk/Move-But-Not-Too-Much?v=1"
+		}
+	],
+	"art":[
+		{
+			"name":"Fox With Wings",
+			"description":"I made this for a request that someone made. Very fun to make but the wings aren't quite right.",
+			"imgSrc":"https://art.pixilart.com/sr24a6a9b72b7e2.png",
+			"imgLink":"https://www.pixilart.com/art/fox-with-wings-sr286c20820fdf2"
+		},
+		{
+			"name":"Stretching Cat",
+			"description":"I wanted to make a silhouette of my cat, but it was hard to see with a dark background, so I added the stars.",
+			"imgSrc":"https://art.pixilart.com/sr2f670ec984ed7.png",
+			"imgLink":"https://www.pixilart.com/art/stretching-cat-sr2f670ec984ed7"
+		},
+		{
+			"name":"Snow Globe",
+			"description":"I made this for a globe contest. The snow looks a little off, but making the cirlces was fun.",
+			"imgSrc":"https://art.pixilart.com/sr2af49ee5ee048.png",
+			"imgLink":"https://www.pixilart.com/art/snow-globe-sr2af49ee5ee048"
+		},
+		{
+			"name":"Trophy",
+			"description":"I made this coffee mug for a trophy contest because the dictionary defines a trophy as a cup.",
+			"imgSrc":"https://art.pixilart.com/sr22f75db62c149.png",
+			"imgLink":"https://www.pixilart.com/art/trophy-sr22f75db62c149"
+		},
+		{
+			"name":"Magnet Gif",
+			"description":"This is the first Gif I have ever made. It consists of 56 frames that I slowly drew in one by one.",
+			"imgSrc":"https://art.pixilart.com/sr24a75e984fa2d.gif",
+			"imgLink":"https://www.pixilart.com/art/magnet-gif-sr24a75e984fa2d"
+		},
+		{
+			"name":"School Bus",
+			"description":"I made this for the first contest that I participated in. I like it but I don't like the 2d perspective.",
+			"imgSrc":"https://art.pixilart.com/sr25a1654c551c0.png",
+			"imgLink":"https://www.pixilart.com/art/school-bus-sr25a1654c551c0"
+		}
+	]
+}
