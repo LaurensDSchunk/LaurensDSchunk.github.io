@@ -1,6 +1,11 @@
 {
 	"projects":[
 		{
+			"name":"Website for Podreel",
+			"description":" ",
+			"path":"projects/podreel"
+		},
+		{
 			"name":"Personal Website",
 			"description":"This website. I created it to showcase my projects and art to friends and family.",
 			"path":"/"
