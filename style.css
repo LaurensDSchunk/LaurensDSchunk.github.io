@@ -33,7 +33,7 @@ body {
 #selection {
 	border: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 1%;
 }
 .selectionItem {
@@ -49,9 +49,17 @@ body {
 }
 #gallery {
 	width: 100%;
-
 }
-
+#about {
+    box-sizing: border-box;
+	width: 100%;
+	color: black;
+	margin-bottom: 1%;
+	border: 5px solid black;
+	border-radius: 20px;
+    border-style: solid;
+    padding: 5px;
+}
 .project {
 	box-sizing: border-box;
 	width: 100%;
