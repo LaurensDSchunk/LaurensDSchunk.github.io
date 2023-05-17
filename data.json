@@ -38,6 +38,12 @@
 	],
 	"art":[
 		{
+			"name":"What?",
+			"description":"A random gif that I made. I was pretty bored and wanted to make 1-bit art."
+			"imgSrc":"https://art.pixilart.com/sr2ac47ee9565f1.gif"
+			"imgLink":"https://www.pixilart.com/art/what-sr2ac47ee9565f1"
+		},
+		{
 			"name":"Thank You!!!",
 			"description":"I got 25 followers on Pixilart! This is my thank you to them. I used the blur tool to make a glow effect.",
 			"imgSrc":"https://art.pixilart.com/sr212f999220a15.png",
