@@ -142,7 +142,8 @@ function generateMessage() {
         "Good Try",
         "Nice Work",
         "Keep Trying",
-        "Don't Give Up"
+        "Don't Give Up",
+        "be better"
     ]
     document.getElementById("motivation").innerText = options[Math.floor(Math.random() * options.length)]
 }
