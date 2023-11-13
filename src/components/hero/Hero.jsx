@@ -1,5 +1,5 @@
 import "./Hero.scss";
-
+import scroll from "/src/assets/icons/scroll.svg"
 function Hero() {
   return (
     <>
@@ -7,7 +7,7 @@ function Hero() {
         <h1>Laurens Schunk;</h1>
         <h2>Full Stack Developer</h2>
       </div>
-      <img className="scroll" src="src/assets/icons/scroll.svg"></img>
+      <img className="scroll" src={scroll}></img>
     </>
   );
 }

@@ -2,20 +2,11 @@ import { useState, useEffect } from "react";
 
 import "./Technologies.scss";
 import Technology from "./Technology";
+import technologies from "/src/data/technologies";
 
 function Technologies() {
-  const [frontendTechnologies, setFrontendTechnologies] = useState([]);
-  const [backendTechnologies, setBackendTechnologies] = useState([]);
-
-  useEffect(() => {
-    fetch("src/data/technologies.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setFrontendTechnologies(data.frontend);
-        setBackendTechnologies(data.backend);
-      })
-      .catch((error) => console.error(error));
-  }, []);
+  const frontendTechnologies = technologies.frontend;
+  const backendTechnologies = technologies.backend;
 
   return (
     <div className="technologies">

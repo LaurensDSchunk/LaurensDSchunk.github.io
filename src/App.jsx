@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import Technologoies from "./components/technologies";
 import Footer from "./components/footer";
 import Projects from "./components/projects";
+import './assetImports.js'
 
 
 function App() {

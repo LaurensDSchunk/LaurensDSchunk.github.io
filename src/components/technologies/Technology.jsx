@@ -1,6 +1,7 @@
 import './Technologies.scss';
 
 function Technology({ img, name }) {
+  
   return (
     <div className='technology'>
       <div className='icon'>

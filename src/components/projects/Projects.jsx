@@ -1,17 +1,10 @@
 import { useState, useEffect } from "react";
 import "./Projects.scss";
-
+import projects from "/src/data/projects";
 import Project from "./Project";
 
 function Projects() {
-  const [projects, setProjects] = useState([]);
 
-  useEffect(() => {
-    fetch("src/data/projects.json")
-      .then((response) => response.json())
-      .then((data) => setProjects(data))
-      .catch((error) => console.error(error));
-  }, []);
 
   return (
     <div className="projects">

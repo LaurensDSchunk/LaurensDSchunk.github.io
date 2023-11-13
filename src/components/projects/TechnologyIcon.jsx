@@ -1,17 +1,11 @@
 import { useState, useEffect } from "react";
+import technogies from "/src/data/technologies";
 
 function TechnologyIcon ({ technology }) {
-  const [technologyIcon, setTechnologyIcon] = useState();
 
-  useEffect(() => {
-    fetch("src/data/technologies.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const allTechnologies = { ...data.frontend, ...data.backend, ...data.other };
-        setTechnologyIcon(allTechnologies[technology]);
-      })
-      .catch((error) => console.error(error));
-  });
+  const allTechnologies = { ...technogies.frontend, ...technogies.backend, ...technogies.other };
+  const technologyIcon = allTechnologies[technology];
+  
 
   return (
     <>
