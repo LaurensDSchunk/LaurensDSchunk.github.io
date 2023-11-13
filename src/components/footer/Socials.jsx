@@ -1,4 +1,4 @@
-
+import "./Footer.scss"
 
 function Socials () {
   return (

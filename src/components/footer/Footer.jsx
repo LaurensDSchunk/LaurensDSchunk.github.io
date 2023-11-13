@@ -1,3 +1,5 @@
+import "./Footer.scss";
+
 import Contact from "./Contact";
 import Socials from "./Socials";
 function Footer () {
