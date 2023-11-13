@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './Footer.scss';
 
 function Contact() {
   const [message, setMessage] = useState("");

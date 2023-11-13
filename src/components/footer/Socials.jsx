@@ -1,5 +1,3 @@
-import './Footer.scss';
-
 function Socials () {
   return (
     <div className="socials">
