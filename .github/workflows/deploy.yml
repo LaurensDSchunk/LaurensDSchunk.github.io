@@ -20,9 +20,6 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Run generateAssetImports script
-        run: node scripts/generateAssetImports.js
-
       - name: Build project
         run: npm run build
 
