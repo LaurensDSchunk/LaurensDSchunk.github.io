@@ -1,0 +1,65 @@
+@import "src/Variables.scss";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: $secondary;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items:end;
+  gap: 20px;
+}
+
+
+.contact {
+  background-color: $secondary;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  h1 {
+    font-size: calc(1.5em + 1.5vw);
+    margin-top: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input, textarea {
+    color: $text;
+    background-color: $background;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  textarea {
+    resize: none;
+    overflow:visible;
+    min-height: 50px;
+  }
+  button {
+    margin-top: 10px;
+    background-color: $primary;
+    color: $contrastText;
+    transition: background-color .2s;
+  }
+  button:hover {
+    background-color: $accent;
+    color: $contrastText;
+  }
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: min-content;
+  img {
+    height: 50px;
+  }
+}
