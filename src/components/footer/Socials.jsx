@@ -1,8 +1,10 @@
+import github from "/src/assets/icons/github.svg";
+
 function Socials () {
   return (
     <div className="socials">
       <a href="https://github.com/LaurensDSchunk" target="_blank">
-        <img src="src/assets/icons/github.svg" alt="github" />
+        <img src={github} alt="github" />
       </a>
     </div>
   )
